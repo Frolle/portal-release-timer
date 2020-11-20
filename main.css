@@ -1,0 +1,51 @@
+.good-class {
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1, h2{
+    color: white !important;
+}
+
+.car-1 {
+    animation: 0.5s spin-left infinite linear;
+    animation-delay: 1.2s;
+}
+
+.car-2 {
+    animation: 0.2s spin-right infinite linear;
+    animation-delay: 2.5s;
+}
+
+.car-3 {
+        animation: 0.2s spin-crazy infinite linear;
+        animation-delay: 3.7s;
+}
+
+@keyframes spin-left {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes spin-right {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes spin-crazy {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotatey(359deg);
+    }
+}
