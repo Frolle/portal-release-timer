@@ -44,11 +44,11 @@
     </div>
     <script>
         var countDownDate = new Date("Dec 2, 2020 08:00").getTime();
-            calculateAndSetWorkHours(); // Run once when the site is loaded.
-            var timerFunction = setInterval(calculateAndSetWorkHours, 1000);
+            updateCountdown(); // Run once when the site is loaded.
+            var timerFunction = setInterval(updateCountdown, 1000);
 
             var latestRandomIndex = 0;
-            function calculateAndSetWorkHours(){
+            function updateCountdown(){
                 var now = new Date().getTime();
 
                 // Find the distance between now and the count down date
