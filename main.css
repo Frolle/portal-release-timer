@@ -5,6 +5,51 @@
     justify-content: center;
 }
 
+.low-rider-car {
+    animation: 8s drive infinite linear;
+}
+.low-rider-bounce {
+    animation: 8s bounce infinite linear;
+}
+
+.low-rider-roll {
+    width: 150px;
+    animation: 8s roll infinite linear;
+}
+
+@keyframes roll {
+    42% {
+        transform: rotate(0deg);
+    }
+    58% {
+        transform: rotate(720deg);
+    }
+    100% {
+        transform: rotate(720deg);
+    }
+}
+
+@keyframes bounce {
+    40% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-400px);
+    }
+    60% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes drive {
+    from {
+        transform: translateX(-150px);
+    }
+    to {
+        transform: translateX(calc(100% + 150px));
+    }
+}
+
 h1, h2{
     color: white !important;
 }
