@@ -6,15 +6,17 @@
 }
 
 .low-rider-car {
-    animation: 8s drive infinite linear;
+    animation: 6s drive infinite linear;
 }
 .low-rider-bounce {
-    animation: 8s bounce infinite linear;
+    animation: 6s bounce infinite linear;
+    overflow-x: hidden;
+    padding: 40px 0;
 }
 
 .low-rider-roll {
     width: 150px;
-    animation: 8s roll infinite linear;
+    animation: 6s roll infinite linear;
 }
 
 @keyframes roll {
