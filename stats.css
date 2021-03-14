@@ -1,0 +1,15 @@
+body {
+    background-color: #f33c3a;
+}
+
+h3, h2, h1 {
+    color: white;
+}
+
+.top-padding{
+        margin-top: 20vh;
+}
+
+.cool-beans {
+    background-color: #bdc3c7;
+}
