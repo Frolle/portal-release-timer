@@ -42,8 +42,6 @@
             $.getJSON("https://server.scapisportal.it.gu.se/scapis/petitions/approved/", function (data) {
                 $("#numberOfPetitions").text(data.length);
                 var index = Math.floor(Math.random() * data.length);
-                console.log(index);
-                console.log(data[index].titleEng);
                 $("#randomTitle").text(data[index].titleEng);
             });
         </script>
